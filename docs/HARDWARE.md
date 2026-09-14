@@ -122,9 +122,9 @@ Everything above the swap line, in particular:
   extension changes emission scheduling, not the physics core. Until then a
   weak-coherent source carries the photon-number-splitting residual (see the
   threat model).
-- **Cascade reconciliation** — the browser's single-pass block-parity
-  correction can be upgraded to parametrized Cascade (Martínez-Mateo et al.)
-  for higher efficiency.
+- **Lower-leakage reconciliation**: the browser runs six-pass Cascade;
+  parametrized Cascade (Martínez-Mateo et al.) or LDPC codes would disclose
+  fewer parity bits and need fewer round trips.
 - **Streaming timetagger + sync-based framing** — moving `DetectorBench` from
   batch `detect()` to the ABC's continuous `clicks()`.
 - **ETSI GS QKD 014 facade** — the daemon's status/pool telemetry already
